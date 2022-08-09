@@ -1,1 +1,35 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  .posts {
+    ul {
+        list-style: none;
+        li {
+            width: 700px;
+            h1 {
+                color: white;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #D7D7D7;
+            }
+
+            time {
+                color: #D7D7D7;
+                font-weight: 400;
+            }
+
+            footer {
+                display: flex;
+                font-weight: 400;
+                justify-content: space-between;
+            }
+        
+        }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import Link from 'next/link';
 
 import { getPrismicClient } from '../services/prismic';
 
@@ -24,9 +25,66 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+export default function Home({ postsPagination }: HomeProps) {
+  return (
+    <div className={styles.container}>
+      <Link href="/">
+        <a>
+          <img src="/Logo.svg" alt="logo" />
+        </a>
+      </Link>
+
+      <div className={styles.posts}>
+        <ul>
+          <li>
+            <h1>How to use hooks</h1>
+            <p>Do you need use React hooks?</p>
+            <footer>
+              <time>15 march 2021</time>
+              <p>Davi Caju</p>
+            </footer>
+          </li>
+
+          <li>
+            <h1>How to use hooks</h1>
+            <p>Do you need use React hooks?</p>
+            <footer>
+              <time>15 march 2021</time>
+              <p>Davi Caju</p>
+            </footer>
+          </li>
+
+          <li>
+            <h1>How to use hooks</h1>
+            <p>Do you need use React hooks?</p>
+            <footer>
+              <time>15 march 2021</time>
+              <p>Davi Caju</p>
+            </footer>
+          </li>
+
+          <li>
+            <h1>How to use hooks</h1>
+            <p>Do you need use React hooks?</p>
+            <footer>
+              <time>15 march 2021</time>
+              <p>Davi Caju</p>
+            </footer>
+          </li>
+
+          <li>
+            <h1>How to use hooks</h1>
+            <p>Do you need use React hooks?</p>
+            <footer>
+              <time>15 march 2021</time>
+              <p>Davi Caju</p>
+            </footer>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
 
 // export const getStaticProps = async () => {
 //   // const prismic = getPrismicClient({});
